@@ -1,6 +1,6 @@
-import type { LinksFunction } from "@remix-run/node"; // or cloudflare/deno
-
-import styles from "./Logo.css?url";
+import type { LinksFunction } from "@remix-run/node";
+import logo from "~/images/logo.png";
+import styles from "~/styles/Logo.css?url";
 
 export const linksLogo: LinksFunction = () => [
   { rel: "stylesheet", href: styles },
@@ -9,7 +9,7 @@ export const linksLogo: LinksFunction = () => [
 export const Logo = () => {
   return (
     <div className="logo-container">
-      <img src="../../../images/logo.png" alt="Bruna Herminio" className="logo" />
+      <img src={logo} alt="Bruna Herminio" className="logo" />
     </div>
   )
 };

@@ -1,6 +1,5 @@
 import type { LinksFunction } from "@remix-run/node"; // or cloudflare/deno
-
-import styles from "./PrimaryButton.css?url";
+import styles from "~/styles/PrimaryButton.css";
 
 export const linksPrimaryButton: LinksFunction = () => [
   { rel: "stylesheet", href: styles },

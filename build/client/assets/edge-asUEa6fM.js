@@ -1,1 +1,0 @@
-import{j as e}from"./jsx-runtime-56DGgGmo.js";const i=()=>[{title:"Remix@Edge | New Remix App"}];function s(){return e.jsx("div",{style:{fontFamily:"system-ui, sans-serif",lineHeight:"1.4"},children:e.jsx("h1",{children:"Welcome to Remix@Edge"})})}export{s as default,i as meta};
