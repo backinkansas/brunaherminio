@@ -4,7 +4,7 @@ import {
   linksLogo,
 } from "~/components/Logo/Logo";
 import type { LinksFunction } from "@remix-run/node";
-import { PrimaryButton } from "~/components/PrimaryButton/PrimaryButton";
+import { PrimaryButton, linksPrimaryButton } from "~/components/PrimaryButton/PrimaryButton";
 
 export const meta: MetaFunction = () => {
   return [
@@ -27,5 +27,6 @@ export default function Index() {
 }
 
 export const links: LinksFunction = () => [
-  ...linksLogo()
+  ...linksLogo(),
+  ...linksPrimaryButton()
 ];
