@@ -1,41 +1,31 @@
 import type { MetaFunction } from "@vercel/remix";
+import {
+  Logo,
+  linksLogo,
+} from "~/components/Logo/Logo";
+import type { LinksFunction } from "@remix-run/node";
+import { PrimaryButton } from "~/components/PrimaryButton/PrimaryButton";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    { title: "Bruna Herminio" },
+    { name: "Bruna Herminio Website", content: "Ilustradora e Designer" },
   ];
 };
 
 export default function Index() {
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
-      <h1>Welcome to Remix</h1>
-      <ul>
+      <Logo />
+      <ul className="link-list">
         <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/blog"
-            rel="noreferrer"
-          >
-            15m Quickstart Blog Tutorial
-          </a>
-        </li>
-        <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/jokes"
-            rel="noreferrer"
-          >
-            Deep Dive Jokes App Tutorial
-          </a>
-        </li>
-        <li>
-          <a target="_blank" href="https://remix.run/docs" rel="noreferrer">
-            Remix Docs
-          </a>
+          <PrimaryButton href={'https://brunaherminio.lojavirtualnuvem.com.br/'} text="Loja online" />
         </li>
       </ul>
     </div>
   );
 }
+
+export const links: LinksFunction = () => [
+  ...linksLogo()
+];

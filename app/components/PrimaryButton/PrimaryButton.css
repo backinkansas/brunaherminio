@@ -1,0 +1,12 @@
+.fake-button {
+  background-color: #b67352;
+  border: 0px;
+  padding: 15px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 10px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 20px;
+}
