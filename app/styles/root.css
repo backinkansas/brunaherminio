@@ -1,9 +1,3 @@
-@font-face{
-  font-family: "Secret Admirer";
-  src:local("SecretAdmirer"),
-  url('../fonts/SecretAdmirer.ttf') 
-}
-
 body {
   background-image: url('../images/pattern.jpg');
   background-size: cover;
