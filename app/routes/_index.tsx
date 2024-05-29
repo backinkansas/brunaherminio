@@ -3,8 +3,8 @@ import {
   Logo,
   linksLogo,
 } from "~/components/Logo/Logo";
+import { Menu, linksMenu } from "~/components/Menu/Menu";
 import type { LinksFunction } from "@remix-run/node";
-import { PrimaryButton, linksPrimaryButton } from "~/components/PrimaryButton/PrimaryButton";
 
 export const meta: MetaFunction = () => {
   return [
@@ -16,17 +16,13 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
+      <Menu />
       <Logo />
-      <ul className="link-list">
-        <li>
-          <PrimaryButton href={'https://brunaherminio.lojavirtualnuvem.com.br/'} text="Loja online" />
-        </li>
-      </ul>
     </div>
   );
 }
 
 export const links: LinksFunction = () => [
   ...linksLogo(),
-  ...linksPrimaryButton()
+  ...linksMenu()
 ];

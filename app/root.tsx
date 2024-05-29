@@ -8,6 +8,7 @@ import {
 import { Analytics } from "@vercel/analytics/react";
 import type { LinksFunction } from "@remix-run/node";
 import styles from "~/styles/root.css?url";
+import "~/fonts/SecretAdmirer.ttf";
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (

@@ -1,5 +1,5 @@
 import type { LinksFunction } from "@remix-run/node";
-import logo from "~/images/logo.png";
+import logo from "~/images/animated_logo.gif";
 import styles from "~/styles/Logo.css?url";
 
 export const linksLogo: LinksFunction = () => [
